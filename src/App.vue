@@ -7,7 +7,7 @@
       </div>
 
       <img src="./assets/foto_elon.jpg" alt="" />
-      <p>RUN 22.222.222-2</p>
+      <p>RUN {{ RUN }}</p>
     </aside>
 
     <main>
@@ -18,46 +18,46 @@
       <section>
         <article>
           <header>APELLIDOS</header>
-          <span>MUSK</span>
+          <span>{{Apellidos}}</span>
         </article>
         <article>
           <header>NOMBRES</header>
-          <span>ELON REEVE</span>
+          <span>{{Nombres}}</span>
         </article>
 
         <div class="grid-2-colums">
           <article>
             <header>NACIONALIDAD</header>
-            <span>SUDAFRICANO</span>
+            <span>{{Nacionalidad}}</span>
           </article>
           <article>
             <header>SEXO</header>
-            <span>M</span>
+            <span>{{Sexo}}</span>
           </article>
         </div>
         <div class="grid-2-colums">
           <article>
             <header>FECHA DE NACIMIENTO</header>
-            <span>28 JUN 1971 </span>
+            <span>{{FechaNacimiento}}</span>
           </article>
           <article>
             <header>NÙMERO DOCUMENTO</header>
-            <span>222.222.222</span>
+            <span>{{NumeroDocumento}}</span>
           </article>
         </div>
         <div class="grid-2-colums">
           <article>
             <header>FECHA DE EMISIÒN</header>
-            <span>01 ENE 2025</span>
+            <span>{{FechaEmision}}</span>
           </article>
           <article>
             <header>FECHA DE VENCIMIENTO</header>
-            <span>01 ENE 2030</span>
+            <span>{{FechaVencimiento}}</span>
           </article>
         </div>
         <article>
           <header>FIRMA DEL TITULAR</header>
-          <span>X Æ A-12</span>
+          <span>{{Firma}}</span>
         </article>
       </section>
     </main>
@@ -67,6 +67,20 @@
 <script>
 export default {
   name: 'App',
+  data(){
+    return {
+      RUN: "22.222.222-2",
+      Apellidos:"MUSK",
+      Nombres:"ELON REEVE",
+      Nacionalidad:"SUDAFRICANO",
+      Sexo:"M",
+      FechaNacimiento:"28 JUN 1971",
+      NumeroDocumento:"222.222.222",
+      FechaEmision:"01 ENE 2025",
+      FechaVencimiento:"01 ENE 2030",
+      Firma:"X Æ A-12"
+    }
+  }
 }
 </script>
 
